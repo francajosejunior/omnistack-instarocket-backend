@@ -1,0 +1,46 @@
+{
+    "posts": {
+        "list": [
+            {
+                "_id": "mkc1t0jwzpy7pg",
+                "author": "Teste",
+                "place": "createdAt",
+                "description": "createdAt",
+                "hashtags": "createdAt",
+                "image": "Cover.jpg",
+                "createdAt": "2019-06-17T01:47:35.427Z",
+                "likes": 4
+            },
+            {
+                "_id": "mkc5sjwzq1z2r",
+                "author": "Teste",
+                "place": "Teste",
+                "description": "Teste",
+                "hashtags": "Teste",
+                "image": "download.jpg",
+                "createdAt": 1560736230866,
+                "likes": 4
+            },
+            {
+                "_id": "mkc540jwzqcivb",
+                "author": "WP",
+                "place": "WP",
+                "description": "WP",
+                "hashtags": "WP",
+                "image": "react-framework-logo.jpg",
+                "likes": 12,
+                "createdAt": 1560736723078
+            },
+            {
+                "_id": "mkcbcjwzqdlbm",
+                "author": "Formik",
+                "place": "Formik",
+                "description": "Formik",
+                "hashtags": "Formik",
+                "image": "formik.jpg",
+                "likes": 6,
+                "createdAt": 1560736772913
+            }
+        ]
+    }
+}

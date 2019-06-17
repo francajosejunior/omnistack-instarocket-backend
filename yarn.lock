@@ -672,7 +672,7 @@ minizlib@^1.2.1:
   dependencies:
     minipass "^2.2.1"
 
-mkdirp@^0.5.0, mkdirp@^0.5.1:
+mkdirp@0.5.x, mkdirp@^0.5.0, mkdirp@^0.5.1:
   version "0.5.1"
   resolved "https://registry.yarnpkg.com/mkdirp/-/mkdirp-0.5.1.tgz#30057438eac6cf7f8c4767f38648d6697d75c903"
   integrity sha1-MAV0OOrGz3+MR2fzhkjWaX11yQM=
@@ -788,6 +788,13 @@ node-abi@^2.7.0:
   integrity sha512-1/aa2clS0pue0HjckL62CsbhWWU35HARvBDXcJtYKbYR7LnIutmpxmXbuDMV9kEviD2lP/wACOgWmmwljghHyQ==
   dependencies:
     semver "^5.4.1"
+
+node-json-db@^0.11.0:
+  version "0.11.0"
+  resolved "https://registry.yarnpkg.com/node-json-db/-/node-json-db-0.11.0.tgz#b62dfb9e43619a798ef14edb82002db55c27ef4b"
+  integrity sha512-QsP8/qJmVPhC2qnxO3O4NIsAd/FDVnO/eNtQvATkWjhPZe7sKeANGcELHk2vnJt6qXHmvolLP1ylaFjSvp9hcw==
+  dependencies:
+    mkdirp "0.5.x"
 
 noop-logger@^0.1.1:
   version "0.1.1"
@@ -1292,6 +1299,11 @@ typedarray@^0.0.6:
   version "0.0.6"
   resolved "https://registry.yarnpkg.com/typedarray/-/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
   integrity sha1-hnrHTjhkGHsdPUfZlqeOxciDB3c=
+
+uniqid@^5.0.3:
+  version "5.0.3"
+  resolved "https://registry.yarnpkg.com/uniqid/-/uniqid-5.0.3.tgz#917968310edc868d50df6c44f783f32c7d80fac1"
+  integrity sha512-R2qx3X/LYWSdGRaluio4dYrPXAJACTqyUjuyXHoJLBUOIfmMcnYOyY2d6Y4clZcIz5lK6ZaI0Zzmm0cPfsIqzQ==
 
 unpipe@1.0.0, unpipe@~1.0.0:
   version "1.0.0"

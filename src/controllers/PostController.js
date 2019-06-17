@@ -1,12 +1,14 @@
-const Post = require('./../models/Post')
 const sharp = require('sharp')
 const path = require('path')
 const fs = require('fs')
+const uniqid = require('uniqid')
+const db = require('./../config/db')
 
 module.exports = {
   async index(req, res) {
-    const posts = await Post.find().sort('-createdAt')
-    res.json(posts)
+    // const posts = await Post.find().sort('-createdAt')
+    const posts = db.getData('/posts/list')
+    res.json(posts.reverse())
   },
   async store(req, res) {
     const { author, place, description, hashtags } = req.body
@@ -22,13 +24,25 @@ module.exports = {
 
     fs.unlinkSync(req.file.path)
 
-    const post = await Post.create({
+    // const post = await Post.create({
+    //   author,
+    //   place,
+    //   description,
+    //   hashtags,
+    //   image
+    // })
+
+    const post = {
+      _id: uniqid(),
       author,
       place,
       description,
       hashtags,
-      image
-    })
+      image,
+      likes: 0
+    }
+
+    db.push(`/posts/list[]`, post)
 
     req.io.emit('post', post)
 
