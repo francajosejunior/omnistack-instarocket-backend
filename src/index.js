@@ -18,5 +18,6 @@ app.use(
   express.static(path.resolve(__dirname, '..', 'uploads', 'resized'))
 )
 app.use(require('./routes'))
-
-server.listen(3333)
+const PORT = process.env.PORT || 3333
+server.listen(PORT)
+console.log(`Listen port:${PORT}`)
